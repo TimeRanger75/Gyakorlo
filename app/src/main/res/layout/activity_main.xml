@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/Nagybetus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:text="NAGY BETŰS SZÖVEG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="59dp" />
+
+    <Button
+        android:id="@+id/Kisbetu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Nagybetus"
+        android:text="KIS BETŰS SZÖVEG"
+        app:layout_constraintBottom_toTopOf="@+id/Random_szin" />
+
+    <Button
+        android:id="@+id/Random_szin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VÉLETLEN SZÍN"
+        app:layout_constraintBottom_toTopOf="@+id/Nagybetus"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/Szoveg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Kisbetu"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Random_szin"
+        android:layout_marginTop="564dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-34dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
